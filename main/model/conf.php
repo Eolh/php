@@ -11,8 +11,8 @@ define("user","root");
 define("password","1234");
 define("db","mydb");
 function connect_db(){
-    mysql_connect(localhost,user,password);
-    mysql_select_db(db);
+    $conf=mysql_connect(localhost,user,password);
+    mysql_select_db(db,$conf);
 
 }
 

@@ -1,7 +1,7 @@
 <?php
 
 
-include_once "../conf/conf.php";
+include_once "./conf.php";
 
 function loginCheck($id, $password){
 

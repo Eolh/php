@@ -5,3 +5,9 @@
  * Date: 2015-11-06
  * Time: 오후 2:13
  */
+include './conf.php';
+function insertProduct(){
+    connect_db();
+
+}
+?>

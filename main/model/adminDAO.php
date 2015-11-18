@@ -6,7 +6,7 @@
  * Time: 오후 3:28
  */
 
-include_once "../conf/conf.php";
+include_once "./conf.php";
 
 define("CLPP", 10); // Count List Per Page  페이지당 리스트 갯수 정의
 define("CPPB", 10); // Count Page Per Block 블록당 표시 페이지 갯수 정의

@@ -27,15 +27,8 @@ $level=0;
 			<hr>
 			<div class="mainMenu"><?php include_once 'MainMenu.php';?></div>
 
+			<div class="mainBody"><?php include_once 'MainBody.php';?></div>
 
-			<div class="view">
-
-			<?php if($MainMenuNum>0&& $MainMenuNum<=8){?>
-				<div class="subMenu"><?php include_once 'SubMenu.php';?></div>
-				<?php }?>
-				<div class="mainBody"><?php include_once 'MainBody.php';?></div>
-			</div>
-			
 			<div class="copyright"><?php include_once 'Copyright.php';?></div>
 		
 		</div>
