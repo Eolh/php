@@ -33,7 +33,7 @@ function loginController( $action ){
             }
 
 
-            header("location:./MainCTL.php?action=$action");
+            header("location:../view/MainView.php?action=$action");
             break;
 
         case 12: // 로그아웃 처리 액션
@@ -61,13 +61,6 @@ function loginController( $action ){
             $data['tel'] = isset($_REQUEST['user_tel'])?$_REQUEST['user_tel']:null;
 
             $result = insertMember($data);
-            if( $result ){
-                $msg = "회원정보를 정상적으로 입력 하였습니다."; //성공메시지 뷰로 리다이렉트
-            }else{
-                $msg = "회원정보 입력에 오류가 발생 하였습니다."; //다시 입력하도록 실패메시지 뷰로 리다이렉트
-            }
-
-            $_SESSION['msg'] = $msg;
 
             $action = 0;
             header("location:../view/MainView.php?action=$action");

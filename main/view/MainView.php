@@ -5,7 +5,7 @@
  * Date: 2015-11-06
  * Time: 오후 2:14
  */include_once 'Header.php';
-$level=0;
+	$level=0;
 ?>
 
 <html>
@@ -27,22 +27,15 @@ $level=0;
 			<hr>
 			<div class="mainMenu"><?php include_once 'MainMenu.php';?></div>
 
+			<div class="mainBody"><?php include_once 'MainBody.php';?></div>
 
-			<div class="view">
-
-			<?php if($MainMenuNum>0&& $MainMenuNum<=8){?>
-				<div class="subMenu"><?php include_once 'SubMenu.php';?></div>
-				<?php }?>
-				<div class="mainBody"><?php include_once 'MainBody.php';?></div>
-			</div>
-			
 			<div class="copyright"><?php include_once 'Copyright.php';?></div>
 		
 		</div>
 </center>
 	<div class="nav">
-		<table><tr><td>aa</td>
-				<td>aa</td>
+		<table><tr><td>사이드</td>
+				<td>네비</td>
 				<td>aa</td></tr>
 			<tr><td>aa</td>
 				<td>aa</td>

@@ -11,7 +11,7 @@ $memberPageInfo = isset($_SESSION['memberPageInfo'])?$_SESSION['memberPageInfo']
 
 <div class="memberList">
     <h2>회원 정보 리스트</h2>
-    <table align="center">
+    <table align="center" width="700">
         <tr>
             <td>순번</td>
             <td>아이디</td>
@@ -30,8 +30,8 @@ $memberPageInfo = isset($_SESSION['memberPageInfo'])?$_SESSION['memberPageInfo']
                 echo "$myValue";
                 echo "</td>";
             }
-            echo "<td><a href='../controller/MainCTL.php?action=916&num={$member['num']}'>UPD</a></td>";
-            echo "<td><a href='../controller/MainCTL.php?action=917&num={$member['num']}&pageNum={$memberPageInfo['currentPageNum']}'>DEL</a></td>";
+            echo "<td><a href='../controller/MainCTL.php?action=916&num={$member['m_num']}'>UPD</a></td>";
+            echo "<td><a href='../controller/MainCTL.php?action=917&num={$member['m_num']}&mpageNum={$memberPageInfo['currentPageNum']}'>DEL</a></td>";
             echo "</tr>";
         }
         }?>

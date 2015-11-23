@@ -19,19 +19,13 @@ switch($mode){
         loginController($action);
         break;
     case 1:
-        header("location:../view/MainView.php?action=$action");
-        break;
     case 2:
-        header("location:../view/MainView.php?action=$action");
-        break;
     case 3:
-        header("location:../view/MainView.php?action=$action");
-        break;
     case 4:
-        header("location:../view/MainView.php?action=$action");
-        break;
     case 5:
-        header("location:../view/MainView.php?action=$action");
+    case 6:
+        include_once "ProductCTL.php";
+        ProductController($action);
         break;
     case 9:
         include_once "AdminCTL.php";

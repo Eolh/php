@@ -6,6 +6,8 @@
  * Time: 오후 2:15
  */
 
-$mainBodyNum=$MainMenuNum*100;
-include "body/BodyPage100.php";
+if($MainMenuNum!=0&&$MainMenuNum<=6)
+    include "body/BodyPage100.php";
+else
+    include "body/Bodypage{$value}.php";
 ?>
