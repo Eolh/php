@@ -5,7 +5,7 @@
  * Date: 2015-11-06
  * Time: 오후 2:14
  */include_once 'Header.php';
-$level=0;
+	$level=0;
 ?>
 
 <html>
@@ -34,8 +34,8 @@ $level=0;
 		</div>
 </center>
 	<div class="nav">
-		<table><tr><td>aa</td>
-				<td>aa</td>
+		<table><tr><td>사이드</td>
+				<td>네비</td>
 				<td>aa</td></tr>
 			<tr><td>aa</td>
 				<td>aa</td>

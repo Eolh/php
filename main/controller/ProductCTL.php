@@ -6,5 +6,6 @@
  * Time: 오후 3:26
  */
 function ProductController($action){
+$categoryName=array("J","T","P","S","B","A");
 
 }

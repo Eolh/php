@@ -5,9 +5,11 @@
 </style>
 
 <?php
-session_start();
 $pageselect= "pageNum".$action;
 $pageInfo= "pageInfo".$action;
+
+$categoryName=array("J","T","P","S","B","A");
+
 $pagenaviInfo=isset($_SESSION[$pageInfo])?$_SESSION[$pageInfo]:null;
 $productList = isset($_SESSION[$pageselect])?$_SESSION[$pageselect]:null;
 $cnt=1;
@@ -31,6 +33,8 @@ if($action%100==0){?>
     <?php if($cnt%3==0){
         echo"</tr>"; $cnt=1;}?>
 </table>
-<?php}
-include "{$value}/{$action}.php";
+<?php }
+if($productList) {
+    include './common/pageNavi.php';
+}
 ?>

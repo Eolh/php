@@ -23,6 +23,7 @@ switch($mode){
     case 3:
     case 4:
     case 5:
+    case 6:
         include_once "ProductCTL.php";
         ProductController($action);
         break;
